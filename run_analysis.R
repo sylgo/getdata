@@ -1,4 +1,29 @@
 
+if(! require("assertthat")) {
+    install.packages("assertthat")
+}
+library(assertthat)
+
+if(! require("stringr")) {
+    install.packages("stringr")
+}
+library(stringr)
+
+if(! require("magrittr")) {
+    install.packages("magrittr")
+}
+library(magrittr)
+
+if(! require("plyr")) {
+    install.packages("plyr")
+}
+library(dplyr)
+
+if(! require("dplyr")) {
+    install.packages("dplyr")
+}
+library(dplyr)
+
 if (! file.exists("./UCI HAR Dataset.zip")) {
     download.file(
        "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",

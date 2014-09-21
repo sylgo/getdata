@@ -4,6 +4,39 @@ In this one R script called =run_analysis.R= we will do the following.
 
 * Merge the training and the test sets to create one data set
 
+** Provide required packages
+
+All of the packages that I use are defined in =technical.md= in the =.Rprofile=
+section. I attempted to install of the mandatory packages here and load them. If
+any part of this fails, then please correct it and run the script again.
+
+#+begin_src R
+if(! require("assertthat")) {
+    install.packages("assertthat")
+}
+library(assertthat)
+
+if(! require("stringr")) {
+    install.packages("stringr")
+}
+library(stringr)
+
+if(! require("magrittr")) {
+    install.packages("magrittr")
+}
+library(magrittr)
+
+if(! require("plyr")) {
+    install.packages("plyr")
+}
+library(dplyr)
+
+if(! require("dplyr")) {
+    install.packages("dplyr")
+}
+library(dplyr)
+#+end_src
+
 ** Get the data archive and extract it
 
 If the data archive does not exist, then download it.
