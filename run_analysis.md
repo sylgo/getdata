@@ -465,10 +465,10 @@ newNames
 newNames %<>% str_replace(perl("\\sfBodyAccJerkMag\\s"), " body acceleration jerk magnitude frequency ")
 newNames
 
-newNames %<>% str_replace(perl("\\sfBodyAcc\\s"), " body acceleration frequencyy ")
+newNames %<>% str_replace(perl("\\sfBodyAcc\\s"), " body acceleration frequency ")
 newNames
 
-newNames %<>% str_replace(perl("\\sfBodyAccMag\\s"), " body acceleration magnitude frequencyy ")
+newNames %<>% str_replace(perl("\\sfBodyAccMag\\s"), " body acceleration magnitude frequency ")
 newNames
 
 newNames %<>% str_replace(perl("\\sfBodyBodyGyroJerkMag\\s*"), " body gyroscopic jerk magnitude by body frequency ")
