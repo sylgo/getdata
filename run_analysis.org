@@ -21,9 +21,16 @@ if(! require("stringr")) {
 }
 library(stringr)
 
+if(! require("devtools")) {
+    install.packages("devtools")
+}
+library(devtools)
+devtools::install_github("devtools")
+
 if(! require("magrittr")) {
     install.packages("magrittr")
 }
+devtools::install_github("smbache/magrittr")
 library(magrittr)
 
 if(! require("plyr")) {
